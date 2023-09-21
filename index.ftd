@@ -1,40 +1,42 @@
--- ds.page: Welcome to doc-site
+-- ftd.container:
+margin.px: 20
 
+-- button: Button
+button: Bigger
+link: www.button.com
+hover-shadow: $s
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- end: ftd.container
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+-- component button:
+caption title:
+string button:
+string link:
+boolean $is-hover: false
+optional ftd.shadow hover-shadow:
 
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
+-- ftd.text: $button.button
+role: $inherited.types.heading-hero
+border-width.px: 2
+padding.px: 10
+border-radius.px: 6
+style: bold
+text-align: center
+color: black
+background.solid: yellow
+border-color: red
+shadow if { button.is-hover} : $button.hover-shadow
+$on-mouse-enter$: $ftd.set-bool($a = $button.is-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button.is-hover, v = false)
+link: $button.link
 
--- ds.h3: 🚀 Fast Track 
+-- end: button
 
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
+-- ftd.color shadow-color:
+light: #cae9ee
+dark: #e4b0ac
 
--- ds.h3: 🌟 Whats next?
-
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
-
--- ds.h3: 👀 Want to learn more?
-
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
-
--- ds.h3: 🎯 Used by?
-
-Our all documentation sites uses this `doc-site` theme.
-
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
-
--- ds.h2: Learn fastn and become a pro?
-
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
--- end: ds.page
+-- ftd.shadow s:
+color: $shadow-color
+blur.px: 50
+spread.px: 7
