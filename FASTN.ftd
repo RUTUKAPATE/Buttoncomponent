@@ -1,14 +1,14 @@
 -- import: fastn
 
--- fastn.package: rutukapate.github.io/date-picker
-favicon: /-/rutukapate.github.io/date-picker/favicon.ico
+-- fastn.package: rutukapate.github.io/Buttoncomponent
+favicon: /-/rutukapate.github.io/Buttoncomponent/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/roboto-typography
 
--- fastn.auto-import: rutukapate.github.io/date-picker/FASTN/ds
--- fastn.auto-import: rutukapate.github.io/date-picker/assets
+-- fastn.auto-import: rutukapate.github.io/Buttoncomponent/FASTN/ds
+-- fastn.auto-import: rutukapate.github.io/Buttoncomponent/assets
 -- fastn.auto-import: doc-site
 
 -- fastn.sitemap:
